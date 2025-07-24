@@ -8,4 +8,48 @@ body {
   display: grid;
   justify-items: center;
   align-items: start;
+  text-align: center;
+  background-color: #dab1da; /*dab1da*/
+  gap: 20px;
+  cursor: url("./images/magic-wand.png"), auto;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: rebeccapurple;
+  color: white;
+  cursor: url("./images/wand-pointer.png"), auto;
+}
+
+button:hover {
+  background-color: #4b0082;
+}
+
+#content {
+  display: grid;
+  gap: 50px;
+}
+
+@font-face {
+  font-family: "Fairy cottage";
+  src: url("./Fonts/Fairy-Cottage.ttf");
+}
+
+#title1 {
+  font-family: "Fairy cottage";
+  font-size: 100px;
+  color: rebeccapurple;
+}
+
+.title2 {
+  font-family: "Fairy cottage";
+  font-size: 50px;
+  color: rebeccapurple;
+}
+
+p {
+  color: black;
 }
