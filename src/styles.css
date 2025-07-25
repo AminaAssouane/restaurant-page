@@ -90,7 +90,7 @@ button:active {
 }
 
 .light:hover {
-  background-color: #f6cefc;
+  background-color: #f6cefc; /*f6cefc*/
   border-radius: 10px;
 }
 
@@ -101,4 +101,8 @@ section {
 
 section.home {
   display: block;
+}
+
+ul {
+  list-style: none;
 }

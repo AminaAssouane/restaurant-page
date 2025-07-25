@@ -1,7 +1,7 @@
 import "./styles.css";
-import "./main.js";
 import "./menu.js";
 import "./contact.js";
+import createHomePage from "./home.js";
 
 console.log("Its running.");
 
@@ -21,4 +21,5 @@ function tabbedBrowsing() {
   }
 }
 
+createHomePage();
 tabbedBrowsing();
