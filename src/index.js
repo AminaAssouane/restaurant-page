@@ -6,6 +6,11 @@ import createContactPage from "./contact.js";
 console.log("Its running.");
 
 // The logic behind our tab switching
+
+createHomePage();
+createMenuPage();
+createContactPage();
+
 let buttons = document.querySelectorAll("button");
 let sections = document.querySelectorAll("section");
 
@@ -21,9 +26,5 @@ function tabbedBrowsing() {
     });
   }
 }
-
-createHomePage();
-createMenuPage();
-createContactPage();
 
 tabbedBrowsing();
