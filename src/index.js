@@ -1,7 +1,7 @@
 import "./styles.css";
-import "./contact.js";
 import createHomePage from "./home.js";
 import createMenuPage from "./menu.js";
+import createContactPage from "./contact.js";
 
 console.log("Its running.");
 
@@ -24,5 +24,6 @@ function tabbedBrowsing() {
 
 createHomePage();
 createMenuPage();
+createContactPage();
 
 tabbedBrowsing();

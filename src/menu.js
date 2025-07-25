@@ -104,21 +104,21 @@ function createMainDishes() {
 }
 
 function createMenuPage() {
-  /* Creating the menu title */
+  // Creating the menu sections
   let title1 = createTitle1();
   let beverages = createBeverages();
   let mainDishes = createMainDishes();
 
-  /* Ceating the menu section  */
+  // Creating the menu section
   let section = document.createElement("section");
   section.classList.add("menu");
 
-  /* Appending the different parts to our section */
+  // Appending the different parts to our section
   section.appendChild(title1);
   section.appendChild(beverages);
   section.appendChild(mainDishes);
 
-  /* Appending the section to our content div */
+  // Appending the section to our content div
   content.appendChild(section);
 }
 

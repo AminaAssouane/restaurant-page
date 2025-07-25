@@ -20,14 +20,14 @@ function createTitle2() {
 }
 
 function createHours() {
-  /* Creating our "lights" div */
+  // Creating our "lights" div
   let hoursDiv = createLight();
 
-  /* Creating the title */
+  // Creating the title
   let title2 = createTitle2();
   title2.innerText = "Hours";
 
-  /* Creating and appending the list items from the hoursList */
+  // Creating and appending the list items from the hoursList
   let hoursArray = [
     "Monday: 6am - 6pm",
     "Tuesday: 6am - 6pm",
@@ -46,7 +46,7 @@ function createHours() {
     hoursList.appendChild(li);
   }
 
-  /* Appending the title and the hours list to our "lights" div */
+  // Appending the title and the hours list to our "lights" div
   hoursDiv.appendChild(title2);
   hoursDiv.appendChild(hoursList);
 
@@ -54,18 +54,18 @@ function createHours() {
 }
 
 function createLocation() {
-  /* Creating our "lights" div */
+  // Creating our "lights" div
   let locationDiv = createLight();
 
-  /* Creating the "Location" title */
+  // Creating the "Location" title
   let title2 = createTitle2();
   title2.innerText = "Location";
 
-  /* Creating our "Location" paragraph */
+  // Creating our "Location" paragraph
   let pLocation = document.createElement("p");
   pLocation.innerText = "13 Meadow's Crypt, Cottagesquare, Fantasia";
 
-  /* Appending the title and the paragraph to our "lights" div */
+  // Appending the title and the paragraph to our "lights" div
   locationDiv.appendChild(title2);
   locationDiv.appendChild(pLocation);
 
@@ -73,21 +73,21 @@ function createLocation() {
 }
 
 function createHomePage() {
-  /* Creating the differents parts of our section */
+  // Creating the differents parts of our section
   let title = createTitle1();
   let hours = createHours();
   let location = createLocation();
 
-  /* Creating the section */
+  // Creating the section
   let section = document.createElement("section");
   section.classList.add("home");
 
-  /* Appending the different parts to our section */
+  // Appending the different parts to our section
   section.appendChild(title);
   section.appendChild(hours);
   section.appendChild(location);
 
-  /* Appending the section to the #container div */
+  // Appending the section to the #container div
   content.appendChild(section);
 }
 
