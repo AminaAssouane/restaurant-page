@@ -1,9 +1,14 @@
+import fairyImage from "./images/fairy.png";
 const content = document.getElementById("content");
 
 function createTitle1() {
   let title1 = document.createElement("div");
   title1.classList.add("title1");
   title1.innerText = "Enchanted Land";
+  let image = document.createElement("img");
+  image.src = fairyImage;
+  image.classList.add("fairy");
+  title1.appendChild(image);
   return title1;
 }
 

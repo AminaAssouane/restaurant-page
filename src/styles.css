@@ -74,16 +74,18 @@ button:active {
   font-weight: bolder;
 }
 
-#fairy {
-  height: 100px;
-  width: 100px;
-}
-
-.food {
+/* Images */
+img {
   height: 50px;
   width: 50px;
 }
 
+.fairy {
+  height: 100px;
+  width: 100px;
+}
+
+/* The light when we hover over an element */
 .light {
   padding: 10px;
   margin: 10px;

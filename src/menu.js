@@ -1,3 +1,5 @@
+const images = require.context("./images", false, /\.(png|jpe?g|svg)$/);
+
 const content = document.getElementById("content");
 
 function createTitle1() {
@@ -26,7 +28,13 @@ function createTitle3() {
   return title3;
 }
 
-function menuItem(title, description, price) {
+function createImage(name) {
+  let image = document.createElement("img");
+  image.src = images(`./${name}.png`);
+  return image;
+}
+
+function menuItem(title, description, price, name) {
   let divMenuItem = createLight();
 
   let menuTitle = createTitle3();
@@ -39,9 +47,12 @@ function menuItem(title, description, price) {
   menuPrice.classList.add("price");
   menuPrice.innerText = price;
 
+  let image = createImage(name);
+
   divMenuItem.appendChild(menuTitle);
   divMenuItem.appendChild(menuDescription);
   divMenuItem.appendChild(menuPrice);
+  divMenuItem.appendChild(image);
 
   return divMenuItem;
 }
@@ -54,16 +65,23 @@ function createBeverages() {
   let menuItem1 = menuItem(
     "Love Potion",
     "This lovely beverage will make any worthy creature adore you ferociously.",
-    "3$"
+    "3$",
+    "love-potion"
   );
 
   let menuItem2 = menuItem(
     "Whimsical Elixir",
     "This strange liquid seems to turn any skeptic into a dreamy fella.",
-    "5$"
+    "5$",
+    "potion"
   );
 
-  let menuItem3 = menuItem("Poison", "CAREFUL! This is dangerous.", "-666$");
+  let menuItem3 = menuItem(
+    "Poison",
+    "CAREFUL! This is dangerous.",
+    "-666$",
+    "poison"
+  );
 
   beverages.appendChild(title2);
   beverages.appendChild(menuItem1);
@@ -81,19 +99,22 @@ function createMainDishes() {
   let menuItem1 = menuItem(
     "Fairy Bread",
     "Plain, normal, peasant-y bread seasoned with fairy dust.",
-    "1$"
+    "1$",
+    "fairy-bread"
   );
 
   let menuItem2 = menuItem(
     "Poisoned Apple",
     "Retrieved from a mysterious cottage inhabited by 7 dwarves.",
-    "6$"
+    "6$",
+    "poisonous"
   );
 
   let menuItem3 = menuItem(
     "Magical Cauldron",
     "Will produce the exact taste you want to have in your mouth at any moment.",
-    "20$"
+    "20$",
+    "cauldron"
   );
 
   mainDishes.appendChild(title2);
