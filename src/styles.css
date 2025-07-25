@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "Fairy cottage";
+  src: url("./Fonts/Fairy-Cottage.ttf");
+}
+
+@font-face {
+  font-family: "Magical mystery";
+  src: url("./Fonts/Magical-Mystery.ttf");
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -15,6 +25,7 @@ body {
 }
 
 button {
+  overflow: auto;
   padding: 10px 20px;
   margin: 20px;
   border: none;
@@ -28,28 +39,60 @@ button:hover {
   background-color: #4b0082;
 }
 
-#content {
+button:active {
+  background-color: #331a4d;
+}
+
+#home,
+#menu,
+#contact {
   display: grid;
   gap: 50px;
 }
 
-@font-face {
+.title1 {
   font-family: "Fairy cottage";
-  src: url("./Fonts/Fairy-Cottage.ttf");
-}
-
-#title1 {
-  font-family: "Fairy cottage";
-  font-size: 100px;
+  font-size: 120px;
   color: rebeccapurple;
 }
 
 .title2 {
   font-family: "Fairy cottage";
-  font-size: 50px;
+  font-size: 70px;
   color: rebeccapurple;
+}
+
+.title3 {
+  font-family: "Magical mystery";
+  font-size: 25px;
+  margin: 10px;
+  color: #331a4d;
 }
 
 p {
   color: black;
+}
+
+.price {
+  font-weight: bolder;
+}
+
+#fairy {
+  height: 100px;
+  width: 100px;
+}
+
+.food {
+  height: 50px;
+  width: 50px;
+}
+
+.light {
+  padding: 10px;
+  margin: 10px;
+}
+
+.light:hover {
+  background-color: #f6cefc;
+  border-radius: 10px;
 }
