@@ -50,6 +50,7 @@ button:active {
   gap: 50px;
 }
 
+/* Titles */
 .title1 {
   font-family: "Fairy cottage";
   font-size: 120px;
@@ -67,10 +68,6 @@ button:active {
   font-size: 25px;
   margin: 10px;
   color: #331a4d;
-}
-
-p {
-  color: black;
 }
 
 .price {
@@ -95,4 +92,13 @@ p {
 .light:hover {
   background-color: #f6cefc;
   border-radius: 10px;
+}
+
+/* Sections */
+section {
+  display: none;
+}
+
+section.home {
+  display: block;
 }
