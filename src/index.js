@@ -1,10 +1,11 @@
 import "./styles.css";
-import "./menu.js";
 import "./contact.js";
 import createHomePage from "./home.js";
+import createMenuPage from "./menu.js";
 
 console.log("Its running.");
 
+// The logic behind our tab switching
 let buttons = document.querySelectorAll("button");
 let sections = document.querySelectorAll("section");
 
@@ -22,4 +23,6 @@ function tabbedBrowsing() {
 }
 
 createHomePage();
+createMenuPage();
+
 tabbedBrowsing();

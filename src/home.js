@@ -87,7 +87,7 @@ function createHomePage() {
   section.appendChild(hours);
   section.appendChild(location);
 
-  /* Appending the section to the #container element in template.html */
+  /* Appending the section to the #container div */
   content.appendChild(section);
 }
 
