@@ -24,6 +24,17 @@ body {
   cursor: url("./images/magic-wand.png"), auto;
 }
 
+header {
+  background-color: #d7a4de;
+  width: 100vw;
+  border-bottom: 1px solid rebeccapurple;
+  position: fixed;
+}
+
+#content {
+  margin-top: 70px;
+}
+
 button {
   overflow: auto;
   padding: 10px 20px;
